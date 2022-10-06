@@ -7,4 +7,4 @@ This mod fixes the Mule Kick having inconsistent spawns after a server rotates a
 * Like I said this is temperary fix. If a future update does fix this issue, refrain from using this mod.
 
 # Instalation
-Download latest version and extract contents to `%localappdata%\Plutonium\storage\t5`.
+Download the [latest release](https://github.com/pistakilla/Plutonium-T5SP-Mule-Kick-Perk-Machine-Fix-For-Servers/download/1.0/mule_kick_fix.zip) and extract contents to `%localappdata%\Plutonium\storage\t5`.
