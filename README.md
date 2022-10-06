@@ -1,4 +1,4 @@
-# Plutonium T5SP Mule Kick Fix
+# Plutonium T5SP Mule Kick Perk Machine Server Fix
 This mod fixes the Mule Kick having inconsistent spawns after a server rotates a map. This is a temporary fix and in later updates to pluto hopefully this will be obselete.
 
 # Other Notes
