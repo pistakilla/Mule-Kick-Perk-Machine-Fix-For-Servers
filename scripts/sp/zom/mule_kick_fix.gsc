@@ -8,10 +8,21 @@ vending_additionalprimaryweapon_fix()
 {
 	if( isDedicated() )
 	{
+		level thread additionalprimaryweapon_precache();
 		level thread additionalprimaryweapon_disable();
     	level thread additionalprimaryweapon_locations();
 		level thread additionalprimaryweapon_spawn();
 	}
+}
+
+additionalprimaryweapon_precache()
+{
+	PrecacheItem( "zombie_perk_bottle_additionalprimaryweapon" );
+	PrecacheShader( "specialty_extraprimaryweapon_zombies" );
+	preCacheModel("zombie_vending_three_gun");
+	preCacheModel("zombie_vending_three_gun_on");
+	PrecacheString( &"ZOMBIE_PERK_ADDITIONALWEAPONPERK" );
+	level._effect["additionalprimaryweapon_light"] = loadfx("misc/fx_zombie_cola_arsenal_on");
 }
 
 additionalprimaryweapon_locations()
@@ -87,7 +98,6 @@ additionalprimaryweapon_locations()
 
 additionalprimaryweapon_spawn()
 {
-	level.zombiemode_using_additionalprimaryweapon_perk = true;
 	cost = 4000;
 
 	machine_clip = spawn( "script_model", level.zombie_additionalprimaryweapon_machine_clip_origin );
