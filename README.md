@@ -1,5 +1,8 @@
 # Mule Kick Perk Machine Fix For Servers
-This mod fixes the Mule Kick having inconsistent spawns after a server rotates a map for Plutonium T5SP. This is a temporary fix, in later updates should make this mod obsolete.
+This mod fixes the Mule Kick perk machines for Plutonium T5SP. This is a temporary fix, in later updates should make this mod obsolete.
+
+# Explaination
+Upon the first server boot, Mule Kick does not spawn initially. Only after the second map rotate does Mule Kick spawn. This can be inconsistent especially in coop. This mod ensures mule kick spawns at any instance.
 
 # Other Notes
 * Only works for Plutonium T5SP. Would not recommend using this on Steam.
