@@ -6,9 +6,12 @@ init(){ level thread vending_additionalprimaryweapon_fix(); }
 
 vending_additionalprimaryweapon_fix()
 {
-	level thread additionalprimaryweapon_disable();
-    level thread additionalprimaryweapon_locations();
-	level thread additionalprimaryweapon_spawn();
+	if( isDedicated() )
+	{
+		level thread additionalprimaryweapon_disable();
+    	level thread additionalprimaryweapon_locations();
+		level thread additionalprimaryweapon_spawn();
+	}
 }
 
 additionalprimaryweapon_locations()
