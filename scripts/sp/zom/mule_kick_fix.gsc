@@ -46,12 +46,13 @@ additionalprimaryweapon_locations()
 		level.zombie_additionalprimaryweapon_machine_angles = (0, 270, 0);
 		level.zombie_additionalprimaryweapon_machine_clip_origin = (436, 1359, 177);
 		level.zombie_additionalprimaryweapon_machine_clip_angles = (0, 0, 0);
-
+		/*
 		level.zombie_additionalprimaryweapon_machine_monkey_angles = (0, 0, 0);
 		level.zombie_additionalprimaryweapon_machine_monkey_origins = [];
 		level.zombie_additionalprimaryweapon_machine_monkey_origins[0] = (398.8, 1398.6, 60);
 		level.zombie_additionalprimaryweapon_machine_monkey_origins[1] = (380.8, 1358.6, 60);
 		level.zombie_additionalprimaryweapon_machine_monkey_origins[2] = (398.8, 1318.6, 60);
+		*/
 		break;
 	case "zombie_coast":
 		level.zombie_additionalprimaryweapon_machine_origin = (2424.4, -2884.3, 314);
@@ -108,7 +109,6 @@ additionalprimaryweapon_spawn()
 	machine = Spawn( "script_model", level.zombie_additionalprimaryweapon_machine_origin );
 	machine.angles = level.zombie_additionalprimaryweapon_machine_angles;
 	machine setModel( "zombie_vending_three_gun" );
-	machine.targetname = "vending_additionalprimaryweapon";
 
 	machine_trigger = Spawn( "trigger_radius", level.zombie_additionalprimaryweapon_machine_origin + (0, 0, 30), 0, 30, 70 );
 	machine_trigger SetCursorHint( "HINT_NOICON" );
@@ -182,5 +182,9 @@ vending_mule_kick(cost)
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 additionalprimaryweapon_disable()
 {
+	level.zombie_additionalprimaryweapon_machine_origin = undefined;
+	level.zombie_additionalprimaryweapon_machine_angles = undefined;
+	level.zombie_additionalprimaryweapon_machine_clip_origin = undefined;
+	level.zombie_additionalprimaryweapon_machine_clip_angles = undefined;
 	setDvar("scr_zm_extra_perk_all", 0);
 }
