@@ -11,4 +11,4 @@ Upon the first server boot, Mule Kick does not spawn initially. Only after the s
 * Like I said this is temporary fix. If a future update does fix this issue, refrain from using this mod.
 
 # Installation
-Download the [latest release](https://github.com/pistakilla/Plutonium-T5SP-Mule-Kick-Perk-Machine-Fix-For-Servers/releases/download/1.0/mule_kick_fix_1.0.zip) and extract contents to `%localappdata%\Plutonium\storage\t5`.
+Download the [latest release](https://github.com/pistakilla/Mule-Kick-Perk-Machine-Fix-For-Servers/releases/download/1.1/mule_kick_fix_1.1.zip) and extract contents to `%localappdata%\Plutonium\storage\t5`.
